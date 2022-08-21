@@ -1,0 +1,62 @@
+:root{
+    --clippy: polygon(0 0, 0 1%, 0 100%, 0% 100%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Sniglet', cursive;
+    background: #f2f2f2;
+    height: 100vh;
+    display: flex;
+}
+.texts{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.paragraph{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    --clippy: circle(0.0% at 50% 50%);
+
+}
+
+.name{
+    font-size: 3rem;
+    margin-bottom: .5em;
+}
+.item{
+    position: relative;
+    padding-left:  1rem;
+    
+}
+.item::before{
+    content: "";
+    display: block;
+    background: crimson;
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:  -1;
+    clip-path: var(--clippy);
+    transition: clip-path 2s ease-in-out;
+}
+.paragraph::before{
+    background: steelblue;
+}
+.name:hover::before{
+    clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+}
+.name:hover + .paragraph::before{
+    clip-path: circle(150% at 50% 50%);
+    transition: clip-path 1.5s 1.5s;
+
+}
