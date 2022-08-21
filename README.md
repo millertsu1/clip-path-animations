@@ -10,5 +10,7 @@ Tambien puedes ver el tutorial y la practica en este link https://www.youtube.co
 Algunas imagenes del resultado:
 ![image](https://user-images.githubusercontent.com/28606447/185810514-ba04d5e7-fa8a-4c37-88c8-b2299a70fae4.png)
 
-Con el efecto: ![image](https://user-images.githubusercontent.com/28606447/185810540-f3fb34f4-cf9f-4675-8f76-21d0afb81848.png)
+
+Con el efecto: 
+![image](https://user-images.githubusercontent.com/28606447/185810540-f3fb34f4-cf9f-4675-8f76-21d0afb81848.png)
 
